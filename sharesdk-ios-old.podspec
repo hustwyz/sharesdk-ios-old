@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
 
-  s.name          = 'ShareSDK'
+  s.name          = 'sharesdk-ios-old
   s.version       = '2.11.2'
   s.summary       = 'ShareSDK lib'
   s.homepage      = 'https://github.com/hustwyz/sharesdk-ios-old'
@@ -10,10 +10,10 @@ Pod::Spec.new do |s|
       :git => 'https://github.com/hustwyz/sharesdk-ios-old.git',
       :tag => '2.11.2'
   }
-  s.source_files = 'Extend/**/*.{h,m}'
-  s.resources = 'Extend/**/*.bundle', 'Core/*.{bundle,lproj}', 'UI/*.bundle'
-  s.vendored_frameworks = 'ShareSDK.framework', 'Extend/**/*.framework', 'Core/*.framework', 'Connection/*.framework'
-  s.vendored_libraries = 'Extend/**/*.a'
+  s.source_files = 'Extend/SinaWeiboSDK/*.{h,m}', 'Extend/WeChatSDK/*.{h,m}'
+  s.resources = 'Extend/QQConnectSDK/*.bundle', 'Extend/RenRenSDK/*.bundle', 'Extend/SinaWeiboSDK/*.bundle', 'Core/*.{bundle,lproj}'
+  s.vendored_frameworks = 'ShareSDK.framework', 'Extend/QQConnectSDK/*.framework', 'Extend/RenRenSDK/*.framework', 'Core/*.framework', 'Connection/*.framework'
+  s.vendored_libraries = 'Extend/SinaWeiboSDK/*.a', 'Extend/WeChatSDK/*.a'
   s.license = 'MIT'
   s.xcconfig     = { 'FRAMEWORK_SEARCH_PATHS' => '"$(PODS_ROOT)/ShareSDK"' }
   s.framework = 'SystemConfiguration', 'QuartzCore', 'CoreTelephony', 'Security', 'ImageIO', 'Social', 'Accounts'
