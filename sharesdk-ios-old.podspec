@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
 
-    s.name          = 'sharesdk-ios-old
+    s.name          = 'sharesdk-ios-old'
     s.version       = '2.11.2'
     s.summary       = 'ShareSDK Lib'
     s.homepage      = 'https://github.com/hustwyz/sharesdk-ios-old'
